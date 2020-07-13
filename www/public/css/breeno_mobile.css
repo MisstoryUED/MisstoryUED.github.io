@@ -1,0 +1,955 @@
+video {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.wow {
+  visibility: hidden;
+}
+html {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+body {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.webkit-overflow-scrolling {
+  -webkit-overflow-scrolling: touch;
+}
+/*
+ * 顶部导航样式
+ */
+.nav .menu_icon .line {
+  background: #3a3a3a;
+}
+.nav.js-nav .bbs {
+  color: #3a3a3a;
+}
+.nav.js-nav .logo {
+  background: url(../img/logo9.png) no-repeat center;
+  background-size: contain;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.breeno-wrapper {
+  position: relative;
+  overflow: scroll;
+  width: 100%;
+  height: 100vh;
+}
+.breeno-wrapper-inner {
+  background: #1C1B20;
+  text-align: center;
+  min-height: 200vh;
+}
+/*
+ *  1 banner 样式
+ */
+.banner {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 26.7vh;
+  height: 100vh;
+  min-height: 150vw;
+}
+.banner .banner-gif {
+  position: absolute;
+  top: 26.7vh;
+  left: calc(50% - 1.6rem);
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.banner .banner-oval,
+.banner .banner-text {
+  position: absolute;
+  top: calc(26.7vh + 2.55rem);
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.banner .banner-oval {
+  width: 100%;
+}
+.banner .banner-text {
+  padding-top: 1.27rem;
+  color: #fff;
+  font-family: OPPOSans-Bold;
+}
+.banner .banner-text .banner-text-top {
+  opacity: 0;
+  -webkit-transform: translateY(0.15rem);
+          transform: translateY(0.15rem);
+  font-size: 0.42rem;
+  line-height: 0.42rem;
+  margin-bottom: 0.42rem;
+}
+.banner .banner-text .banner-text-bottom {
+  opacity: 0;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
+  font-size: 0.54rem;
+  line-height: 0.72rem;
+}
+.banner .banner-text.banner-text-show .banner-text-top {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.banner .banner-text.banner-text-show .banner-text-bottom {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: all 0.5s 0.25s;
+  transition: all 0.5s 0.25s;
+}
+/*
+ * 文字显示
+ */
+.section-title {
+  font-family: OPPOSans-Bold;
+  font-size: 0.84rem;
+  color: #FFFFFF;
+  margin-bottom: 0.25rem;
+  -webkit-animation: sectionTitleSlide ease-in;
+          animation: sectionTitleSlide ease-in;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.section-title-bar {
+  width: 0;
+  height: 0.14rem;
+  background: #fff;
+}
+.section-title-bar.into-view {
+  width: 0.64rem;
+  -webkit-transition: width 1.3s ease-in;
+  transition: width 1.3s ease-in;
+}
+.section-description {
+  color: #fff;
+}
+.section-description-title {
+  margin-bottom: 0.34rem;
+  font-family: OPPOSans-Bold;
+  font-size: 0.56rem;
+  line-height: 1em;
+}
+.section-description-sub {
+  margin-bottom: 0.4rem;
+  font-family: OPPOSans-Regular;
+  font-size: 0.3rem;
+  line-height: 0.46rem;
+  width: 18em;
+}
+.section-button-more {
+  margin-bottom: 1.6rem;
+  width: 4.2rem;
+  height: 0.8rem;
+  padding-left: 0.43rem;
+  padding-right: 0.43rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #FFFFFF;
+  border-radius: 0.43rem;
+  color: #fff;
+  line-height: 0.7rem;
+  font-size: 0.3rem;
+  overflow: hidden;
+}
+.section-button-more span {
+  float: right;
+  font-size: 0.4rem;
+  line-height: 0.65rem;
+}
+@-webkit-keyframes sectionTitleSlide {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 5.4rem;
+  }
+}
+@keyframes sectionTitleSlide {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 5.4rem;
+  }
+}
+/*
+ * 2 4 6 8 模块
+ */
+.breeno-even {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+  text-align: left;
+}
+.breeno-even .section-title,
+.breeno-even .section-title-bar,
+.breeno-even .section-description {
+  margin-left: 0.5rem;
+}
+.breeno-even .section-title {
+  margin-top: 1rem;
+}
+.breeno-even .breeno-even-middle {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  font-size: 0;
+}
+.breeno-canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  border-radius: 0.12rem;
+}
+.goods,
+.screen,
+.advice,
+.space {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 6.79rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.12rem;
+  font-size: 0;
+}
+/*
+ * 3 5 7 模块
+ */
+.breeno-odd {
+  text-align: left;
+  margin: 1.6rem 0 0 0.85rem;
+}
+.breeno-odd .section-title-bar {
+  background: -webkit-gradient(linear, right top, left top, from(#9600FF), to(#FF001E));
+  background: linear-gradient(-90deg, #9600FF 0%, #FF001E 100%);
+}
+/*
+ * 2 识物
+ */
+.goods .breeno-even-middle {
+  position: relative;
+  margin: 1rem 0 0.8rem 0.5rem;
+}
+.goods .breeno-even-middle .goods-phone {
+  width: 3.6rem;
+  height: 7.54rem;
+}
+.goods .breeno-even-middle .goods-phone:first-of-type {
+  position: relative;
+  z-index: 1;
+}
+.goods .breeno-even-middle .goods-phone:last-of-type {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 3.6rem;
+  opacity: 0;
+}
+.goods .breeno-even-middle .goods-phone:last-of-type.into-view {
+  left: 3.8rem;
+  opacity: 1;
+  -webkit-transition: all 1s 1.8s ease-in;
+  transition: all 1s 1.8s ease-in;
+}
+/*
+ * 3 速览
+ */
+.quick .quick-middle {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 0;
+}
+.quick .quick-middle .quick-phone {
+  position: absolute;
+  left: 0.08rem;
+  top: 0.12rem;
+  z-index: 1;
+  height: 7.28rem;
+  width: 3.48rem;
+  border-radius: 0.4rem;
+}
+.quick .quick-middle .quick-phone-frame {
+  position: relative;
+  height: 7.56rem;
+  width: 3.6rem;
+  z-index: 2;
+}
+/*
+ * 4 识屏
+ */
+.screen .breeno-even-middle {
+  margin: 1rem 0.57rem 0.8rem 0.57rem;
+  position: relative;
+  height: 8.68rem;
+  width: 5.67rem;
+}
+.screen .breeno-even-middle .screen-phone-wrapper {
+  -webkit-transform: translateY(-3.3rem);
+          transform: translateY(-3.3rem);
+  -webkit-animation: screenSlideInDown;
+          animation: screenSlideInDown;
+}
+.screen .breeno-even-middle .screen-phone {
+  width: 100%;
+}
+.screen .breeno-even-middle .screen-phone-wave {
+  position: absolute;
+  left: -0.05rem;
+  top: 3.4rem;
+  width: 5.8rem;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.screen .breeno-even-middle .screen-phone-fingerprint {
+  position: absolute;
+  left: calc(50% - 0.82rem);
+  top: 5.48rem;
+  width: 1.64rem;
+  opacity: 0;
+}
+.screen .breeno-even-middle .screen-phone-wrapper.into-view .screen-phone-wave {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 0.7s 1.05s ease-in;
+  transition: -webkit-transform 0.7s 1.05s ease-in;
+  transition: transform 0.7s 1.05s ease-in;
+  transition: transform 0.7s 1.05s ease-in, -webkit-transform 0.7s 1.05s ease-in;
+}
+.screen .breeno-even-middle .screen-phone-wrapper.into-view .screen-phone-fingerprint {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s 0.55s ease-in;
+  transition: opacity 0.5s 0.55s ease-in;
+}
+@-webkit-keyframes screenSlideInDown {
+  0% {
+    -webkit-transform: translateY(-3.44rem);
+            transform: translateY(-3.44rem);
+  }
+  100% {
+    -webkit-transform: translateY(-2.94rem);
+            transform: translateY(-2.94rem);
+  }
+}
+@keyframes screenSlideInDown {
+  0% {
+    -webkit-transform: translateY(-3.44rem);
+            transform: translateY(-3.44rem);
+  }
+  100% {
+    -webkit-transform: translateY(-2.94rem);
+            transform: translateY(-2.94rem);
+  }
+}
+/*
+ * 5 语音
+ */
+.voice .voice-middle {
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 0;
+}
+.voice .voice-middle .voice-phone {
+  height: 7.55rem;
+  width: 3.6rem;
+}
+/*
+ * 6 语音
+ */
+.advice .breeno-even-middle {
+  margin-top: 0.81rem;
+  margin-bottom: 0.8rem;
+}
+.advice .breeno-even-middle .advice-phone-left {
+  float: left;
+  margin-left: -0.68rem;
+  margin-top: 0.28rem;
+  width: 3.99rem;
+}
+.advice .breeno-even-middle .advice-phone-right {
+  margin-right: -0.68rem;
+  float: right;
+  width: 3.99rem;
+}
+.advice .breeno-even-middle img {
+  width: 100%;
+  margin-bottom: 0.2rem;
+}
+.advice .breeno-even-middle li:last-of-type img {
+  margin-bottom: 0;
+}
+/*
+ * 7 驾驶
+ */
+.drive .drive-middle {
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 0;
+}
+.drive .drive-middle .drive-phone {
+  width: 5.9rem;
+  height: 8.86rem;
+}
+/*
+ * 8 空间
+ */
+.space .breeno-even-middle {
+  margin: 1rem 0.7rem 0.8rem 0.7rem;
+  position: relative;
+  height: 8.68rem;
+  width: 5.4rem;
+}
+.space .breeno-even-middle .space-phone-wrapper {
+  -webkit-transform: translateY(-2.65rem);
+          transform: translateY(-2.65rem);
+  -webkit-animation: spaceSlideInDown;
+          animation: spaceSlideInDown;
+}
+.space .breeno-even-middle .space-phone {
+  width: 100%;
+}
+.space .section-description-sub {
+  margin-bottom: 1.6rem;
+}
+@-webkit-keyframes spaceSlideInDown {
+  0% {
+    -webkit-transform: translateY(-3.15rem);
+            transform: translateY(-3.15rem);
+  }
+  100% {
+    -webkit-transform: translateY(-2.65rem);
+            transform: translateY(-2.65rem);
+  }
+}
+@keyframes spaceSlideInDown {
+  0% {
+    -webkit-transform: translateY(-3.15rem);
+            transform: translateY(-3.15rem);
+  }
+  100% {
+    -webkit-transform: translateY(-2.65rem);
+            transform: translateY(-2.65rem);
+  }
+}
+/*
+ * 9 隐私
+ */
+.privacy {
+  margin-top: 2rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0;
+}
+.privacy .privacy-text-top {
+  font-family: OPPOSans-Bold;
+  font-size: 0.72rem;
+  line-height: 0.86rem;
+}
+.privacy .privacy-icon-wrapper {
+  position: relative;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 1rem;
+  height: 4.2rem;
+  width: 4.2rem;
+  border-radius: 50%;
+  background: #000;
+  border: 0 solid #1C1B20;
+}
+.privacy .privacy-icon {
+  position: absolute;
+  left: calc(50% - 1.05rem);
+  top: calc(50% - 1.05rem);
+  width: 2.1rem;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.privacy .privacy-description {
+  display: inline-block;
+  margin-top: 0.49rem;
+  width: 5.94rem;
+  font-family: OPPOSans-Regular;
+  font-size: 0.3rem;
+  line-height: 0.46rem;
+}
+.privacy .privacy-jump {
+  padding-top: 0.21rem;
+  padding-bottom: 0.1rem;
+  font-family: OPPOSans-Regular;
+  font-size: 0.3rem;
+  color: #E23294;
+  line-height: 0.3rem;
+}
+.privacy .privacy-jump-arrow {
+  fill: #E23294;
+  width: 0.38rem;
+  height: 0.38rem;
+  display: inline-block;
+  vertical-align: sub;
+}
+.privacy .privacy-icon-wrapper.into-view .privacy-icon {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 1.5s ease-in;
+  transition: -webkit-transform 1.5s ease-in;
+  transition: transform 1.5s ease-in;
+  transition: transform 1.5s ease-in, -webkit-transform 1.5s ease-in;
+}
+.developZoomIn {
+  -webkit-animation: developZoomIn ease-in;
+          animation: developZoomIn ease-in;
+}
+@-webkit-keyframes developZoomIn {
+  0% {
+    opacity: 0;
+    border-width: 1.6rem;
+  }
+  35% {
+    opacity: 0;
+    border-width: 1.6rem;
+  }
+  100% {
+    border-width: 0;
+  }
+}
+@keyframes developZoomIn {
+  0% {
+    opacity: 0;
+    border-width: 1.6rem;
+  }
+  35% {
+    opacity: 0;
+    border-width: 1.6rem;
+  }
+  100% {
+    border-width: 0;
+  }
+}
+.privacy.develop {
+  margin-top: 1.32rem;
+  padding-bottom: 2.92rem;
+}
+/*
+ * 弹出部分
+ */
+.breeno-modal {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999992;
+  overflow: auto;
+  background: #1C1A20;
+}
+.breeno-modal .breeno-modal-inner {
+  position: relative;
+  min-height: 101%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 1.2rem;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.breeno-modal .breeno-modal-close {
+  position: fixed;
+  z-index: 9;
+  right: 0.6rem;
+  top: 0.4rem;
+  z-index: 99;
+  width: 1.1rem;
+  height: 1.1rem;
+  background: url(../img/breeno/card/close-circle.png) no-repeat center;
+  background-size: contain;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.breeno-modal .breeno-modal-close.breeno-close-active {
+  -webkit-transform: none;
+          transform: none;
+}
+.breeno-modal .breeno-modal-close.breeno-close-active:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.breeno-modal .card-wall {
+  min-height: 105vh;
+  padding-bottom: 2.2rem;
+  position: relative;
+  z-index: 2;
+}
+.breeno-modal .breeno-card {
+  position: relative;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  margin: 0 0.55rem 0.3rem;
+  border-radius: 0.12rem;
+  background: #EDEEF9;
+  text-align: center;
+  overflow: hidden;
+  font-size: 0;
+}
+.breeno-modal .card-text {
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
+  font-family: OPPOSans-Bold;
+  font-size: 0.48rem;
+  line-height: 0.6rem;
+  color: #000000;
+  text-align: center;
+}
+.breeno-modal .card-phone-wrapper {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 3.6rem;
+  font-size: 0;
+}
+.breeno-modal .card-phone-frame {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.breeno-modal .card-phone,
+.breeno-modal .card-play-mask {
+  position: absolute;
+  left: 0.08rem;
+  top: 0.13rem;
+  width: 95%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  z-index: 1;
+  border-radius: 0.37rem;
+}
+.breeno-modal .card-phone-camera .card-phone,
+.breeno-modal .card-phone-camera .card-play-mask {
+  top: 0.6rem;
+  border-radius: 0.4rem;
+}
+.breeno-modal .card-phone-camera .card-play-button {
+  top: calc(50% - 0.25rem);
+}
+.breeno-modal .card-phone-camera-small .card-phone,
+.breeno-modal .card-phone-camera-small .card-play-mask {
+  top: 0.5rem;
+  border-radius: 0.4rem;
+}
+.breeno-modal .card-phone-camera-small .card-play-mask {
+  height: 7.45rem;
+}
+.breeno-modal .card-phone-camera-small .card-play-button {
+  top: calc(50% - 0.29rem);
+}
+.breeno-modal .card-play-mask {
+  background: rgba(0, 0, 0, 0.5);
+  height: 6.63rem;
+  z-index: 3;
+  -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.breeno-modal .special.card-play-mask {
+  height: 6.63rem;
+}
+.breeno-modal .card-play-button {
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  left: calc(50% - 0.5rem);
+  z-index: 4;
+  width: 1rem;
+  height: 1rem;
+}
+.breeno-modal .card-play-button .triangle-right {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: calc(50% - 0.16rem);
+  left: calc(50% - 0.12rem);
+  z-index: 2;
+  border-top: 0.16rem solid transparent;
+  border-left: 0.24rem solid #fff;
+  border-bottom: 0.16rem solid transparent;
+}
+.breeno-modal .card-play-button .card-play-cirlce {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  stroke-dasharray: 255%;
+  margin-left: -0.04rem;
+  stroke: #fff;
+  fill: none;
+  stroke-dashoffset: 255%;
+  -webkit-animation: solid-circle 1s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+          animation: solid-circle 1s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+}
+.breeno-modal .card-play-hide.card-play-mask {
+  opacity: 0;
+  background: transparent;
+}
+.breeno-modal .card-play-hide.card-play-button .triangle-right {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s 0.8s ease;
+  transition: opacity 0.3s 0.8s ease;
+}
+.breeno-modal .card-play-hide.card-play-button .card-play-cirlce {
+  stroke-dashoffset: 255%;
+  -webkit-animation: dash 1s ease forwards;
+          animation: dash 1s ease forwards;
+}
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 255%;
+  }
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 255%;
+  }
+}
+@-webkit-keyframes solid-circle {
+  to {
+    stroke-dashoffset: 0%;
+  }
+}
+@keyframes solid-circle {
+  to {
+    stroke-dashoffset: 0%;
+  }
+}
+@-webkit-keyframes fadeInUpBreeno {
+  0% {
+    opacity: 0.6;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInUpBreeno {
+  0% {
+    opacity: 0.6;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeInUpBreeno {
+  -webkit-animation-name: fadeInUpBreeno;
+          animation-name: fadeInUpBreeno;
+}
+.goods-modal .breeno-card:nth-of-type(1) .card-phone-wrapper {
+  height: 7.55rem;
+  margin-bottom: 1rem;
+}
+.goods-modal .breeno-card:nth-of-type(2) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 6rem;
+}
+.goods-modal .breeno-card:nth-of-type(3) .card-phone-wrapper {
+  height: 6.8rem;
+}
+.goods-modal .breeno-card:nth-of-type(4) .card-phone-wrapper {
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+.goods-modal .breeno-card:nth-of-type(5) .card-phone-wrapper {
+  height: 6.9rem;
+}
+.goods-modal .breeno-card:nth-of-type(6) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 7.2rem;
+}
+.goods-modal .breeno-card:nth-of-type(7) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 6.8rem;
+}
+.goods-modal .breeno-card .card-play-mask.full-height {
+  height: 7.33rem;
+}
+.quick-modal .breeno-card:nth-of-type(1) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 7.06rem;
+}
+.quick-modal .breeno-card:nth-of-type(2) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 5.66rem;
+}
+.quick-modal .breeno-card:nth-of-type(3) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 6.06rem;
+}
+.quick-modal .breeno-card:nth-of-type(4) .card-phone-wrapper {
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+.quick-modal .breeno-card:nth-of-type(5) .card-phone-wrapper {
+  height: 6.9rem;
+}
+.quick-modal .breeno-card:nth-of-type(6) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 7.2rem;
+}
+.quick-modal .breeno-card:nth-of-type(7) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 6.8rem;
+}
+.screen-modal .breeno-card .card-phone-wrapper {
+  margin-bottom: 1rem;
+  height: 7.55rem;
+}
+.voice-modal .breeno-card .card-text {
+  padding-top: 0.55rem;
+  padding-bottom: 1rem;
+}
+.voice-modal .breeno-card .card-phone-wrapper .card-phone {
+  position: absolute;
+  bottom: 0.15rem;
+  left: 0.08rem;
+  top: auto;
+}
+.voice-modal .breeno-card .card-phone-wrapper .card-phone-frame {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.voice-modal .breeno-card:nth-of-type(1) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 5.6rem;
+}
+.voice-modal .breeno-card:nth-of-type(2) .card-phone-wrapper {
+  height: 6.83rem;
+}
+.voice-modal .breeno-card:nth-of-type(3) .card-phone-wrapper {
+  height: 6.83rem;
+}
+.voice-modal .breeno-card:nth-of-type(4) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 5.6rem;
+}
+.voice-modal .breeno-card:nth-of-type(5) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 5.6rem;
+}
+.voice-modal .breeno-card:nth-of-type(6) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 4.64rem;
+}
+.advice-modal .breeno-card .card-text {
+  padding-top: 0.55rem;
+  padding-bottom: 1rem;
+}
+.advice-modal .breeno-card .card-phone-wrapper .card-phone {
+  position: absolute;
+  bottom: 0.15rem;
+  left: 0.08rem;
+  top: auto;
+}
+.advice-modal .breeno-card .card-phone-wrapper .card-phone-frame {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.advice-modal .breeno-card:nth-of-type(1) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 6.83rem;
+}
+.advice-modal .breeno-card:nth-of-type(2) .card-phone-wrapper,
+.advice-modal .breeno-card:nth-of-type(3) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 5.6rem;
+}
+.advice-modal .breeno-card:nth-of-type(4) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 4.08rem;
+}
+.fadeInDownMiddle {
+  -webkit-animation-name: fadeInDownMiddle;
+          animation-name: fadeInDownMiddle;
+}
+@-webkit-keyframes fadeInDownMiddle {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes fadeInDownMiddle {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.drive-modal .breeno-card .card-text {
+  padding-top: 0.55rem;
+  padding-bottom: 1rem;
+}
+.drive-modal .breeno-card .card-phone-wrapper .card-phone,
+.drive-modal .breeno-card .card-phone-wrapper .card-play-mask {
+  position: absolute;
+  bottom: 0.15rem;
+  left: 0.08rem;
+  top: auto;
+}
+.drive-modal .breeno-card .card-phone-wrapper .card-phone-frame {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.drive-modal .breeno-card:nth-of-type(1) .card-phone-wrapper {
+  height: 4.46rem;
+}
+.drive-modal .breeno-card:nth-of-type(2) .card-phone-wrapper,
+.drive-modal .breeno-card:nth-of-type(3) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 5.6rem;
+}
+.drive-modal .breeno-card:nth-of-type(4) .card-phone-wrapper {
+  width: 4.2rem;
+  height: 4.08rem;
+}
+.videomask {
+  opacity: 0.9;
+  z-index: 999994 !important;
+}
+.videopop {
+  z-index: 999999 !important;
+}
