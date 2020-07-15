@@ -436,7 +436,7 @@ video {
 }
 .breeno-odd .odd-right .section-title-bar {
   background: -webkit-gradient(linear, right top, left top, from(#952FDB), to(#C63647));
-  background: linear-gradient(-90deg, #952FDB 0%, #C63647 100%);
+  background: linear-gradient(-90deg, #1296db 0%, #5ddbff 100%);
 }
 .breeno-odd.into-view-middle .odd-right .section-title {
   width: 100%;
@@ -816,7 +816,7 @@ video {
 .privacy .privacy-jump {
   overflow: hidden;
   margin-top: 30px;
-  color: #E23294;
+  color: #15afff;
   font-size: 18px;
   font-family: OPPOSans-Regular, Microsoft YaHei;
 }
@@ -827,7 +827,7 @@ video {
   vertical-align: text-top;
 }
 .privacy .section-button-more-svg {
-  fill: #E23294;
+  fill: #15afff;
   width: 23px;
   height: 23px;
   min-width: 20px;
